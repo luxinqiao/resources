@@ -1,0 +1,23 @@
+﻿-----------------------------------------------------------------------npm login
+luxinqiao
+lxq19900716
+lxq1990.0716@qq.com
+
+-----------------------------------------------------------------------npm与cnpm切换
+--查看配置
+npm config get registry
+--使用cnpm
+npm config set registry https://registry.npm.taobao.org
+--使用npm
+npm config set registry https://registry.npmjs.org
+
+-----------------------------------------------------------------------2FA
+52242db0d7a611e5ae1e1be362e10212737223e0baf0855f49a0641c96547917
+5aba1e53a82056a0662eb1bfc846db7d56e82fba386ff51d2450b617c4d7c42c
+fa91480e4ad62734ba9d5a8931c826ee24a937e222c1f103162cc21d96f0bf49
+
+-----------------------------------------------------------------------npm发布流程
+package.json增加版本号
+npm run lib
+npm login
+npm publish

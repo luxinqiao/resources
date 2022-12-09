@@ -1,0 +1,30 @@
+﻿1.安装express：
+cnpm install express-generator -g
+
+2.在指定目录下安装project1：
+express -e project1
+
+3.在project1中安装依赖包：
+cnpm install
+
+4.安装nodemon（代码实时编译插件）：
+cnpm install -g nodemon
+package.json文件修改：
+"scripts": {
+    "start": "nodemon ./bin/www"
+ }
+
+5.npm安装mongoDB：
+cnpm install mongodb -S
+
+6.安装cors（解决跨域）
+$ cnpm i cors -S
+
+7.安装mongoose（创建数据库，连接数据库）
+cnpm install mongoose --save
+
+8.安装body-parser（对post请求的请求体进行解析）
+cnpm install body-parser --save
+
+9.启动项目：
+cnpm start

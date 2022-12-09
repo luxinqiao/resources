@@ -1,0 +1,43 @@
+--------------------------------------------------------------------打tag
+--切换到commit id下
+git checkout 1a34f083ca522dbce9dae71cec29cd7d798b7a93
+--新增tag
+git tag backup-20191101
+--提交所有tag
+git push origin --tags
+--删除tag
+git tag -d backup-20190621
+git push origin --delete tag backup-20190621
+
+--------------------------------------------------------------------打分支
+--查看本地分支/远程分支/所有分支
+git branch
+git branch -r
+git branch -a
+
+--本地新建develop分支
+git checkout -b develop
+--本地develop分支推送到远程
+git push origin develop
+
+--本地新建develop分支并关联到远程develop分支
+git checkout -b develop origin/develop
+
+--建立本地到远仓的链接
+git branch --set-upstream-to=develop
+
+--切换分支master
+git checkout master
+
+--合并develop分支到master分支中
+git merge develop
+
+--本地master推送到远程master
+git push origin master
+
+--------------------------------------------------------------------git取消托管
+--取消缓存不想跟踪的文件
+git rm --cached src/config/Index.js
+
+--手工修改文件.gitignore
+添加src/config/Index.js配置

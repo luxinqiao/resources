@@ -1,0 +1,94 @@
+﻿1.安装mongoDB，配置环境变量Path：
+D:\SoftWare\MongoDB\bin
+
+2. 根目录新建log和data文件夹
+log里面新建mongodb.log文件
+
+3.启动数据库服务：
+mongod --dbpath 'D:\SoftWare\MongoDB\data'
+项目中新建start.bat文件，拖放至shell命令框中：
+start mongod --dbpath D:\SoftWare\MongoDB\data
+
+4.mongoDB操作：
+--连接数据库
+mongo
+--显示所有数据库
+show dbs
+--创建一张表
+db.createCollection("user")
+--展示所有表
+show collections
+--查询表中所有记录
+db.user.find()
+--表中插入1条记录
+db.user.insertOne({name:"luxinqiao2"})
+
+
+
+-----------------------------------------------------------------------------
+mongo
+
+use HOW_TO_RECOVERY_BASE
+db.dropDatabase()
+
+use mumu
+db.createCollection("user")
+db.createCollection("dict")
+db.dict.find()
+
+-----------------------------------------------------------------------------
+
+db.user.insertOne({"uuid" :"2020112617143001" , "name" : "luxinqiao1", "sex" : "1", "age" : "18", "weight" : "73kg", "birthday" : "1990", "phone" : "13088881111", "avatar" : "", "email" : "joska@qq.com", "post" : "223000", "address" : "江苏南京", "habit" : "1,2,7,5", "education" : 1, "school" : "南京大学", "major" : "土木工程", "company" : "麦豆健康", "job" : 1, "income" : 1, "remark" : "mumu-ui作者"})
+db.user.insertOne({"uuid" :"2020112617143002" , "name" : "luxinqiao2", "sex" : "1", "age" : "18", "weight" : "73kg", "birthday" : "1990", "phone" : "13088881111", "avatar" : "", "email" : "joska@qq.com", "post" : "223000", "address" : "江苏南京", "habit" : "1,2,7,5", "education" : 1, "school" : "南京大学", "major" : "土木工程", "company" : "麦豆健康", "job" : 1, "income" : 1, "remark" : "mumu-ui作者"})
+db.user.insertOne({"uuid" :"2020112617143003" , "name" : "luxinqiao3", "sex" : "1", "age" : "18", "weight" : "73kg", "birthday" : "1990", "phone" : "13088881111", "avatar" : "", "email" : "joska@qq.com", "post" : "223000", "address" : "江苏南京", "habit" : "1,2,7,5", "education" : 1, "school" : "南京大学", "major" : "土木工程", "company" : "麦豆健康", "job" : 1, "income" : 1, "remark" : "mumu-ui作者"})
+db.user.insertOne({"uuid" :"2020112617143004" , "name" : "luxinqiao4", "sex" : "1", "age" : "18", "weight" : "73kg", "birthday" : "1990", "phone" : "13088881111", "avatar" : "", "email" : "joska@qq.com", "post" : "223000", "address" : "江苏南京", "habit" : "1,2,7,5", "education" : 1, "school" : "南京大学", "major" : "土木工程", "company" : "麦豆健康", "job" : 1, "income" : 1, "remark" : "mumu-ui作者"})
+db.user.insertOne({"uuid" :"2020112617143005" , "name" : "luxinqiao5", "sex" : "1", "age" : "18", "weight" : "73kg", "birthday" : "1990", "phone" : "13088881111", "avatar" : "", "email" : "joska@qq.com", "post" : "223000", "address" : "江苏南京", "habit" : "1,2,7,5", "education" : 1, "school" : "南京大学", "major" : "土木工程", "company" : "麦豆健康", "job" : 1, "income" : 1, "remark" : "mumu-ui作者"})
+db.user.insertOne({"uuid" :"2020112617143006" , "name" : "luxinqiao6", "sex" : "1", "age" : "18", "weight" : "73kg", "birthday" : "1990", "phone" : "13088881111", "avatar" : "", "email" : "joska@qq.com", "post" : "223000", "address" : "江苏南京", "habit" : "1,2,7,5", "education" : 1, "school" : "南京大学", "major" : "土木工程", "company" : "麦豆健康", "job" : 1, "income" : 1, "remark" : "mumu-ui作者"})
+db.user.insertOne({"uuid" :"2020112617143007" , "name" : "luxinqiao7", "sex" : "1", "age" : "18", "weight" : "73kg", "birthday" : "1990", "phone" : "13088881111", "avatar" : "", "email" : "joska@qq.com", "post" : "223000", "address" : "江苏南京", "habit" : "1,2,7,5", "education" : 1, "school" : "南京大学", "major" : "土木工程", "company" : "麦豆健康", "job" : 1, "income" : 1, "remark" : "mumu-ui作者"})
+db.user.insertOne({"uuid" :"2020112617143008" , "name" : "luxinqiao8", "sex" : "1", "age" : "18", "weight" : "73kg", "birthday" : "1990", "phone" : "13088881111", "avatar" : "", "email" : "joska@qq.com", "post" : "223000", "address" : "江苏南京", "habit" : "1,2,7,5", "education" : 1, "school" : "南京大学", "major" : "土木工程", "company" : "麦豆健康", "job" : 1, "income" : 1, "remark" : "mumu-ui作者"})
+db.user.insertOne({"uuid" :"2020112617143009" , "name" : "luxinqiao9", "sex" : "1", "age" : "18", "weight" : "73kg", "birthday" : "1990", "phone" : "13088881111", "avatar" : "", "email" : "joska@qq.com", "post" : "223000", "address" : "江苏南京", "habit" : "1,2,7,5", "education" : 1, "school" : "南京大学", "major" : "土木工程", "company" : "麦豆健康", "job" : 1, "income" : 1, "remark" : "mumu-ui作者"})
+db.user.insertOne({"uuid" :"2020112617143010" , "name" : "luxinqiao10", "sex" : "1", "age" : "18", "weight" : "73kg", "birthday" : "1990", "phone" : "13088881111", "avatar" : "", "email" : "joska@qq.com", "post" : "223000", "address" : "江苏南京", "habit" : "1,2,7,5", "education" : 1, "school" : "南京大学", "major" : "土木工程", "company" : "麦豆健康", "job" : 1, "income" : 1, "remark" : "mumu-ui作者"})
+db.user.insertOne({"uuid" :"2020112617143011" , "name" : "luxinqiao11", "sex" : "1", "age" : "18", "weight" : "73kg", "birthday" : "1990", "phone" : "13088881111", "avatar" : "", "email" : "joska@qq.com", "post" : "223000", "address" : "江苏南京", "habit" : "1,2,7,5", "education" : 1, "school" : "南京大学", "major" : "土木工程", "company" : "麦豆健康", "job" : 1, "income" : 1, "remark" : "mumu-ui作者"})
+
+-----------------------------------------------------------------------------
+
+db.dict.insertOne({uuid:"20201117173028001", collection:"user", field: "sex", value: 0, desc: "未知"})
+db.dict.insertOne({uuid:"20201117173028002", collection:"user", field: "sex", value: 1, desc: "男"})
+db.dict.insertOne({uuid:"20201117173028003", collection:"user", field: "sex", value: 2, desc: "女"})
+
+db.dict.insertOne({uuid:"20201117173356001", collection:"user", field: "habit", value: 1, desc: "跑步"})
+db.dict.insertOne({uuid:"20201117173356002", collection:"user", field: "habit", value: 2, desc: "游泳"})
+db.dict.insertOne({uuid:"20201117173356003", collection:"user", field: "habit", value: 3, desc: "瑜伽"})
+db.dict.insertOne({uuid:"20201117173356004", collection:"user", field: "habit", value: 4, desc: "音乐"})
+db.dict.insertOne({uuid:"20201117173356005", collection:"user", field: "habit", value: 5, desc: "电影"})
+db.dict.insertOne({uuid:"20201117173356006", collection:"user", field: "habit", value: 6, desc: "旅游"})
+db.dict.insertOne({uuid:"20201117173356007", collection:"user", field: "habit", value: 7, desc: "美食"})
+db.dict.insertOne({uuid:"20201117173356008", collection:"user", field: "habit", value: 8, desc: "购物"})
+db.dict.insertOne({uuid:"20201117173356009", collection:"user", field: "habit", value: 9, desc: "其他"})
+
+db.dict.insertOne({uuid:"20201117173822001", collection:"user", field: "education", value: 0, desc: "请选择"})
+db.dict.insertOne({uuid:"20201117173822002", collection:"user", field: "education", value: 1, desc: "小学"})
+db.dict.insertOne({uuid:"20201117173822003", collection:"user", field: "education", value: 2, desc: "初中"})
+db.dict.insertOne({uuid:"20201117173822004", collection:"user", field: "education", value: 3, desc: "高中"})
+db.dict.insertOne({uuid:"20201117173822005", collection:"user", field: "education", value: 4, desc: "大专"})
+db.dict.insertOne({uuid:"20201117173822006", collection:"user", field: "education", value: 5, desc: "本科"})
+db.dict.insertOne({uuid:"20201117173822007", collection:"user", field: "education", value: 6, desc: "硕士"})
+db.dict.insertOne({uuid:"20201117173822008", collection:"user", field: "education", value: 7, desc: "博士"})
+
+db.dict.insertOne({uuid:"20201117174006001", collection:"user", field: "job", value: 0, desc: "请选择"})
+db.dict.insertOne({uuid:"20201117174006002", collection:"user", field: "job", value: 1, desc: "服务业"})
+db.dict.insertOne({uuid:"20201117174006003", collection:"user", field: "job", value: 2, desc: "建筑业"})
+db.dict.insertOne({uuid:"20201117174006004", collection:"user", field: "job", value: 3, desc: "制造业"})
+db.dict.insertOne({uuid:"20201117174006005", collection:"user", field: "job", value: 4, desc: "农业"})
+db.dict.insertOne({uuid:"20201117174006006", collection:"user", field: "job", value: 5, desc: "纺织业"})
+db.dict.insertOne({uuid:"20201117174006007", collection:"user", field: "job", value: 6, desc: "加工业"})
+db.dict.insertOne({uuid:"20201117174006008", collection:"user", field: "job", value: 7, desc: "个体"})
+db.dict.insertOne({uuid:"20201117174006009", collection:"user", field: "job", value: 8, desc: "IT"})
+
+db.dict.insertOne({uuid:"20201117174332001", collection:"user", field: "income", value: 0, desc: "请选择"})
+db.dict.insertOne({uuid:"20201117174332002", collection:"user", field: "income", value: 1, desc: "10万以下"})
+db.dict.insertOne({uuid:"20201117174332003", collection:"user", field: "income", value: 2, desc: "10万-20万"})
+db.dict.insertOne({uuid:"20201117174332004", collection:"user", field: "income", value: 3, desc: "20万-50万"})
+db.dict.insertOne({uuid:"20201117174332005", collection:"user", field: "income", value: 4, desc: "50万-100万"})
+db.dict.insertOne({uuid:"20201117174332006", collection:"user", field: "income", value: 5, desc: "100万-500万"})
+db.dict.insertOne({uuid:"20201117174332007", collection:"user", field: "income", value: 6, desc: "500万以上"})

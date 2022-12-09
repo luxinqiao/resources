@@ -1,0 +1,19 @@
+﻿--1.安装nodeJs
+node -v
+npm -v
+
+--2.cnpm代替npm
+npm install -g cnpm --registry=http://registry.npm.taobao.org
+
+--3.安装vue-cli脚手架
+cnpm install -g @vue/cli
+
+--4.创建新项目(一路Enter和Y)
+vue init webpack vue-backend-dev
+vue create projectName
+
+--5.安装依赖包
+cnpm install
+
+--6.启动项目
+cnpm run serve

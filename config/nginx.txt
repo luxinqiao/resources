@@ -1,0 +1,7 @@
+C:\Users\Administrator>d:
+
+D:\>cd D:\Software\nginx-1.14.0
+
+D:\Software\nginx-1.14.0>nginx -s reload
+
+nginx -c /conf/nginx.conf
